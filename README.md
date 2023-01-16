@@ -1,5 +1,8 @@
 # Usage example
 
+
+This tool is Python 2.6-2.7 compatible and has no dependencies beyond the standard library. It has client-server architecture. Just run the client on the machine you want to tunnel the traffic through. Server should be started on pentester's machine and listen to incoming connections from the client.
+
 Start server listener on port 9999, which creates a socks 4 proxy on 127.0.0.1:1080 upon connection from client:
 
 ```python server.py --server-port 9999 --server-ip 0.0.0.0 --proxy-ip 127.0.0.1 --proxy-port 1080```
